@@ -40,12 +40,12 @@ def test_get_human_age_rejects_negative_ages(
 
 
 @pytest.mark.parametrize(
-    ('cat_age', 'dog_age'),
+    ("cat_age", "dog_age"),
     [
         (1.5, 0),
         (0, 1.5),
-        ('1', 0),
-        (0, '1'),
+        ("1", 0),
+        (0, "1"),
         (True, 0),
         (0, False),
         (None, 0),
